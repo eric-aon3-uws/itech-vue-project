@@ -135,12 +135,23 @@
       />
       <div class="text-mist-600 flex flex-col mt-2">
         <strong>SHAMI</strong>
+        <div class="flex mt-1 mb-2">
+          <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
+          <p class="p-2 border border-mist-800 rounded-xl">
+            So, before we go through our examples, it’s important to understand what makes Vue
+            different. Vue is a progressive JavaScript framework, which basically means you don’t
+            have to use everything it offers straight away. You could start by adding a small
+            interactive feature to an existing website, and as your project grows, you can introduce
+            components and other tools to build a complete application.
+          </p>
+        </div>
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Vue can also work with Web Components, support single-page applications, and use
+            additional tools for server-side rendering and static site generation. Its wider
+            ecosystem even allows developers to build experiences beyond the browser. Let’s look at
+            three practical examples using our Christmas market website.
           </p>
         </div>
       </div>
@@ -157,9 +168,11 @@
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            First, we have reactivity and event handling, using our ticket counter. As you can see,
+            we can increase or decrease the number of tickets using these buttons, and the number
+            displayed on screen updates immediately. This works because we use ref to create
+            reactive state. In simple terms, Vue keeps track of that value and updates the interface
+            when it changes.
           </p>
         </div>
       </div>
@@ -173,9 +186,11 @@
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            The @click directive handles the button clicks, while :disabled prevents us from
+            reducing the ticket count below zero. We also use v-if to display a reservation message
+            when at least one ticket has been selected. So, instead of manually changing the HTML
+            every time something happens, we update the state, and Vue takes care of keeping the
+            interface in sync.
           </p>
         </div>
       </div>
@@ -192,9 +207,9 @@
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Next, we have components and reusable user interface elements. For our Christmas market,
+            each stall is displayed as a card containing its name, category, description and
+            location.
           </p>
         </div>
       </div>
@@ -208,9 +223,12 @@
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Instead of writing separate HTML for every stall, we created one reusable component
+            called StallCard.vue. We then pass different stall information into that component using
+            props, and use v-for to generate a card for every stall in our data. This means every
+            card follows the same design, but the information changes depending on the stall. The
+            main benefit is maintainability. If we want to change the appearance of every stall
+            card, we can update the component once instead of editing each card individually.
           </p>
         </div>
       </div>
@@ -227,9 +245,9 @@
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Finally, we added search and filtering to make the market easier to explore. Users can
+            type a stall name into the search field and select a category from the dropdown menu.
+            The results update automatically as these selections change.
           </p>
         </div>
       </div>
@@ -243,9 +261,12 @@
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            We use v-model to connect the input fields to Vue's reactive state and computed to work
+            out which stalls match the selected search and category. We also handle the situation
+            where nothing matches, displaying a message instead of leaving the results area blank.
+            Together, these three demos show how Vue's reactive state, reusable components and
+            built-in directives can work together to create an interactive application without
+            manually updating the page.
           </p>
         </div>
       </div>
@@ -259,12 +280,21 @@
       />
       <div class="text-mist-600 flex flex-col mt-2">
         <strong>SHAMI</strong>
+        <div class="flex mt-1 mb-2">
+          <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
+          <p class="p-2 border border-mist-800 rounded-xl">
+            But these examples have only scratched the surface. Vue can be used for much larger
+            applications, including single-page applications with client-side routing, shared state
+            management using tools like Pinia, and server-side rendering or static site generation
+            with supporting frameworks. Its ecosystem also includes development, testing and
+            TypeScript tools, and it can integrate with backend services and APIs.
+          </p>
+        </div>
         <div class="flex mt-1">
           <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
           <p class="p-2 border border-mist-800 rounded-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            So, Vue is not just useful for small interactive features. It can form the frontend of a
+            much larger system.
           </p>
         </div>
       </div>
