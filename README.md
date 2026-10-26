@@ -2,7 +2,7 @@
 
 This website was developed in order to host the materials made for Group G's presentation on **Vue.js** during 26/27's run of the **Internet Technologies** module.
 
-## Recommended IDE Setup
+## Website Structure
 
 The website's content is divided between four subsections: **Home**, **Presentation**, **Setup Tutorial**, and **Development Tutorial**.
 
