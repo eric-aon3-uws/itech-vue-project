@@ -1,48 +1,23 @@
-# vue-project
+# Vue.js Presentation Website (itech-vue-project)
 
-This template should help get you started developing with Vue 3 in Vite.
+This website was developed in order to host the materials made for Group G's presentation on **Vue.js** during 26/27's run of the **Internet Technologies** module.
 
 ## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+The website's content is divided between four subsections: **Home**, **Presentation**, **Setup Tutorial**, and **Development Tutorial**.
 
-## Recommended Browser Setup
+### Home
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+**Home** contains a brief description of the presentation's topic, group members, etc. much like the short description above. It also contains a list of extra reading/references on the topic if people wish to engage with the subject matter further.
 
-## Type Support for `.vue` Imports in TS
+### Presentation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+**Presentation** contains all the slides used during the presentation, together with some of the members' script notes used during the presentation, which are also annotated with their names for attribution.
 
-## Customize configuration
+### Setup Tutorial
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+The **Setup Tutorial** page provides a simple tutorial that will guide you through a Vite + Vue.js environment installation using Docker, meaning it should be suitable for UWS machines. It is then continued in **Development Tutorial**.
 
-## Project Setup
+### Development Tutorial
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+The **Development Tutorial** picks up from where the **Setup Tutorial** left off, showing you how to then develop a Paisley Christmas Market website using a few of Vue.js's features.
