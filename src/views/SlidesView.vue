@@ -540,25 +540,9 @@
         </div>
       </div>
     </section>
+    
     <section class="mb-4">
-      <h2 class="text-xl font-bold text-mist-300 mb-1">20 - Conclusion</h2>
-      <img
-        class="md:mb-2 md:mt-2 rounded-2xl max-w-full mx-auto aspect-auto object-cover"
-        src="../img/slides/25.png"
-        alt=""
-      />
-      <div class="text-mist-600 flex flex-col mt-2">
-        <strong>LUQMAN</strong>
-        <div class="flex mt-1">
-          <div class="min-w-1.5 max-w-1.5 bg-mist-800 mr-2 rounded-sm"></div>
-          <p class="p-2 border border-mist-800 rounded-xl w-full">
-            Thank you for listening. Any questions?
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="mb-4">
-      <h2 class="text-xl font-bold text-mist-300 mb-1">21 - References</h2>
+      <h2 class="text-xl font-bold text-mist-300 mb-1">20 - References</h2>
       <img
         class="md:mb-2 md:mt-2 rounded-2xl max-w-full mx-auto aspect-auto object-cover"
         src="../img/slides/27.png"
