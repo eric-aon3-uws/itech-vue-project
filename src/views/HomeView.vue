@@ -28,6 +28,15 @@
         Presentation, including some commentary that was used during the presentation itself
       </li>
       <li>
+        <RouterLink to="/notes"><span>Notes</span></RouterLink> — Written reference notes on Vue.js:
+        core concepts, how it fits into a system, the ecosystem, a framework comparison and
+        referenced pros & cons
+      </li>
+      <li>
+        <RouterLink to="/cheatsheet"><span>Cheat Sheet</span></RouterLink> — Vue 3 syntax at a
+        glance, plus the most common beginner mistakes
+      </li>
+      <li>
         <RouterLink to="/tutorial"><span>Setup Tutorial</span></RouterLink> — Follow through the
         tutorial to set up Vue.js + Vite on your machine! The tutorial was made with the
         in-university machines & Docker in mind.
@@ -37,39 +46,14 @@
         created a Vue + Vite environment, let's create a simple website to showcase some of Vue's
         functions.
       </li>
+      <li>
+        <RouterLink to="/demo"><span>Live Demo</span></RouterLink> — Try the finished Christmas
+        Market app in your browser and compare it with your own at each tutorial step.
+      </li>
     </div>
   </section>
   <hr class="border-b text-mist-800 mt-6 mb-4" />
-  <section class="mb-4">
-    <h2 class="text-xl font-bold text-mist-300 mb-1">Further Reading</h2>
-    <div class="text-mist-600 flex flex-col gap-4">
-      <p>
-        Here is a list of some of the resources we used to create this website that you may follow
-        if you want to read up on Vue.js and its ecosystem:
-      </p>
-      <p>
-        Github.io. (2016). Presentation of vue.js | introduction to vue.js. Available at:
-        <a href="https://worldline.github.io/vuejs-training/presentation/"
-          >https://worldline.github.io/vuejs-training/presentation/</a
-        >
-        <br />npm (n.d.) vue. Available at:
-        <a href="https://www.npmjs.com/package/vue">https://www.npmjs.com/package/vue</a> <br />Vue
-        Router (n. d.) Vue Router. Available at
-        <a href="https://router.vuejs.org/">https://router.vuejs.org/</a> <br />Nuxt (n. d.) Nuxt
-        documentation. Available at <a href="https://nuxt.com/docs">https://nuxt.com/docs</a>
-        <br />Vue School (2025) Vue.js – 2025 In Review and a Peek into 2026. Available at:
-        <a href="https://vueschool.io/articles/news/vue-js-2025-in-review-and-a-peek-into-2026/"
-          >https://vueschool.io/articles/news/vue-js-2025-in-review-and-a-peek-into-2026/</a
-        >
-        <br />Monterail (n.d.) Top companies using Vue.js. Available at:
-        <a href="https://www.monterail.com/blog/top-companies-using-vue-js"
-          >https://www.monterail.com/blog/top-companies-using-vue-js</a
-        >
-        <br />Made with Vue.js (n.d.) Nintendo. Available at:
-        <a href="https://madewithvuejs.com/nintendo">https://madewithvuejs.com/nintendo</a>
-      </p>
-    </div>
-  </section>
+  
 </template>
 
 <style scoped>

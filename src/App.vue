@@ -36,7 +36,9 @@
           N A V I G A T I O N
         </h2>
         <hr class="border-t border-mist-800 my-1" />
-        <ul class="flex flex-row md:flex-col gap-4 md:gap-0 md:space-y-[0.5rem] mt-2">
+        <ul
+          class="flex flex-row flex-wrap md:flex-nowrap md:flex-col gap-x-4 gap-y-1 md:gap-0 md:space-y-[0.5rem] mt-2"
+        >
           <RouterLink
             to="/"
             class="relative hover:rounded-t-xl hover:text-mist-300 transition-all duration-200 block py-1"
@@ -62,6 +64,30 @@
             <p class="md:ml-2">Presentation</p>
           </RouterLink>
           <RouterLink
+            to="/notes"
+            class="relative hover:rounded-t-xl hover:text-mist-300 transition-all duration-200 block py-1"
+          >
+            <div
+              class="active_indicator | absolute block md:hidden left-0 right-0 bottom-0 w-full h-1 rounded-sm transition-all"
+            ></div>
+            <div
+              class="active_indicator | absolute hidden md:block top-0 bottom-0 w-0 rounded-sm transition-all"
+            ></div>
+            <p class="md:ml-2">Notes</p>
+          </RouterLink>
+          <RouterLink
+            to="/cheatsheet"
+            class="relative hover:rounded-t-xl hover:text-mist-300 transition-all duration-200 block py-1"
+          >
+            <div
+              class="active_indicator | absolute block md:hidden left-0 right-0 bottom-0 w-full h-1 rounded-sm transition-all"
+            ></div>
+            <div
+              class="active_indicator | absolute hidden md:block top-0 bottom-0 w-0 rounded-sm transition-all"
+            ></div>
+            <p class="md:ml-2">Cheat Sheet</p>
+          </RouterLink>
+          <RouterLink
             to="/tutorial"
             class="relative hover:rounded-t-xl hover:text-mist-300 transition-all duration-200 block py-1"
           >
@@ -84,6 +110,18 @@
               class="active_indicator | absolute hidden md:block top-0 bottom-0 w-0 rounded-sm transition-all"
             ></div>
             <p class="md:ml-2">Development Tutorial</p>
+          </RouterLink>
+          <RouterLink
+            to="/demo"
+            class="relative hover:rounded-t-xl hover:text-mist-300 transition-all duration-200 block py-1"
+          >
+            <div
+              class="active_indicator | absolute block md:hidden left-0 right-0 bottom-0 w-full h-1 rounded-sm transition-all"
+            ></div>
+            <div
+              class="active_indicator | absolute hidden md:block top-0 bottom-0 w-0 rounded-sm transition-all"
+            ></div>
+            <p class="md:ml-2">Live Demo</p>
           </RouterLink>
         </ul>
       </sidebar>

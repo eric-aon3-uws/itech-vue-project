@@ -29,6 +29,10 @@
       <h2 class="text-xl font-bold text-mist-300 mb-1">Setting up the Docker Container</h2>
       <div class="text-mist-600 flex flex-col gap-4">
         <p>
+          Before you start, make sure <strong>Docker Desktop</strong> is open and running, otherwise
+          VS Code can't create the container.
+        </p>
+        <p>
           First, create a folder that you want to keep the project in, and open it in Visual Studio
           Code.
         </p>
@@ -61,6 +65,15 @@
           alt="Installation"
           class="md:mb-2 md:mt-2 rounded-2xl max-w-[26rem] mx-auto aspect-auto object-cover"
         />
+        <div class="border-l-4 border-emerald-600 pl-4">
+          <p>
+            <strong>Tip:</strong> to avoid ending up with a folder inside a folder, type a full stop
+            (<code>.</code>) when asked for the <strong>Project name</strong>, then
+            <code>vue-tutorial</code> as the package name. The project is then created in the folder
+            you already have open, so you can skip the <code>cd vue-tutorial</code> command below
+            and every new terminal opens in the right place.
+          </p>
+        </div>
         <p>
           As it usefully points out in the terminal, now you should change directories to your newly
           created Vue project and install the packages:
@@ -134,6 +147,33 @@
       </div>
     </section>
 
+    <hr class="border-b text-mist-800 mt-6 mb-4" />
+    <section class="text-sm text-mist-600 flex flex-col gap-2">
+      <h2 class="text-xl font-bold text-mist-300">Sources &amp; Credits</h2>
+      <p>
+        These steps follow the official documentation below. 
+      </p>
+      <p>
+        Docker (n.d.) Docker Desktop. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://docs.docker.com/desktop/" target="_blank">https://docs.docker.com/desktop/</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Microsoft (n.d.) Developing inside a container. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://code.visualstudio.com/docs/devcontainers/containers" target="_blank">https://code.visualstudio.com/docs/devcontainers/containers</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vite (n.d.) Server options. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vite.dev/config/server-options" target="_blank">https://vite.dev/config/server-options</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.) Quick start. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/quick-start.html" target="_blank">https://vuejs.org/guide/quick-start.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+    </section>
     <div class="h-50"></div>
   </div>
 </template>

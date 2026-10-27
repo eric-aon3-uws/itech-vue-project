@@ -112,6 +112,37 @@ body {
           alt="Paisley Christmas Market Banner"
           class="md:mb-6 md:mt-2 rounded-2xl max-w-full mx-auto aspect-auto object-cover"
         />
+        <div class="border-l-4 border-emerald-600 pl-4 flex flex-col gap-3">
+          <p class="font-semibold text-mist-300">Page not updating when you save?</p>
+          <p>
+            If you're using Docker, Vite isn't told when you save a file from Windows, so the
+            browser only changes when you refresh. To fix it, open
+            <code class="text-mist-300">vite.config.ts</code> and add this
+            <code class="text-mist-300">server</code> block between
+            <code class="text-mist-300">plugins</code> and
+            <code class="text-mist-300">resolve</code>:
+          </p>
+          <div
+            class="w-full min-w-0 bg-[#030405] border border-mist-900 p-4 rounded-2xl text-sm overflow-x-auto"
+          >
+            <p class="uppercase text-mist-300 font-mono text-xs mb-2">
+              &lt;/&gt; typescript: vite.config.ts
+            </p>
+            <pre
+              v-pre
+              class="font-mono text-xs text-mist-400 leading-relaxed"
+            ><code>  server: {
+    watch: {
+      usePolling: true, // keep checking for saved changes
+    },
+  },</code></pre>
+          </div>
+          <p>
+            Save it, stop the server with <strong>Ctrl+C</strong>, and run
+            <code class="text-mist-300">npm run dev</code> again. From now on the browser updates
+            on its own every time you save.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -220,8 +251,9 @@ export const stalls = [
         </div>
 
         <p>
-          Next, create a <code class="text-mist-300">StallCard.vue</code> file inside
-          <code class="text-mist-300">src/components/</code>:
+          Next, inside <code class="text-mist-300">src</code>, create a new folder named
+          <code class="text-mist-300">components</code> (a blank project doesn't have one). Inside
+          it, create a <code class="text-mist-300">StallCard.vue</code> file:
         </p>
 
         <div
@@ -480,7 +512,57 @@ const filteredStalls = computed(() =>
         </ul>
       </div>
     </section>
+    <hr class="border-b text-mist-800 mt-2 mb-4" />
+    <section class="mb-6 text-sm text-mist-600 flex flex-col gap-2">
+      <h2 class="text-xl font-bold text-mist-300">Sources &amp; Credits</h2>
+      <p>
+        The Vue features in this tutorial follow the official Vue.js guide pages below. Group G's
+        own work is the Paisley Christmas Market itself: the theme and design, the fictional stall
+        data, the ticket and stall-search scenario, and how the features are built up step by step.
+      </p>
+      <p>
+        Vue.js (n.d.a) Reactivity fundamentals. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/essentials/reactivity-fundamentals.html" target="_blank">https://vuejs.org/guide/essentials/reactivity-fundamentals.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.b) Template syntax. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/essentials/template-syntax.html" target="_blank">https://vuejs.org/guide/essentials/template-syntax.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.c) Event handling. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/essentials/event-handling.html" target="_blank">https://vuejs.org/guide/essentials/event-handling.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.d) Conditional rendering. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/essentials/conditional.html" target="_blank">https://vuejs.org/guide/essentials/conditional.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.e) List rendering. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/essentials/list.html" target="_blank">https://vuejs.org/guide/essentials/list.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.f) Props. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/components/props.html" target="_blank">https://vuejs.org/guide/components/props.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.g) Computed properties. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/essentials/computed.html" target="_blank">https://vuejs.org/guide/essentials/computed.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+      <p>
+        Vue.js (n.d.h) Form input bindings. Available at:
+        <a class="text-emerald-500 hover:underline break-all" href="https://vuejs.org/guide/essentials/forms.html" target="_blank">https://vuejs.org/guide/essentials/forms.html</a>
+        (Accessed: 20 October 2026).
+      </p>
+    </section>
   </div>
+  
   <div class="h-50"></div>
 </template>
 <style scoped>
