@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-mist-600: oklch(70% 0.016 213);
+}

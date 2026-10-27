@@ -474,7 +474,7 @@ span:hover {
   color: var(--color-emerald-400);
 }
 a {
-  color: var(--color-emerald-700);
+  color: var(--color-emerald-500);
   overflow-wrap: anywhere;
 }
 a:hover {

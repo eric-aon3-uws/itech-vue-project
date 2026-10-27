@@ -305,7 +305,7 @@ pre code {
   color: inherit;
 }
 a {
-  color: var(--color-emerald-700);
+  color: var(--color-emerald-500);
   overflow-wrap: anywhere;
 }
 a:hover {
